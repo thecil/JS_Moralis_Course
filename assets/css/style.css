@@ -8,6 +8,7 @@
     text-shadow: 2px 2px 7px darkgray;
 }
 
+
 .dashed-border{
     border: 2px dashed darkblue;
 }
@@ -35,8 +36,30 @@ form {
     border: 2px solid black;
     margin: 30px;
 }
+
 [type=text], [type=number], [type=submit]{
     padding: 8px;
 }
 
-
+@media screen and (min-width: 400px){
+    .header-container {
+        display: flex;
+    }
+    .menu-list { 
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 30px;
+    }
+    .menu-item {
+        margin: 20px;
+        font-size: 16px;
+    }
+    .logo {
+        padding-left: 25px;
+        width: 30%;
+    }
+    .main-nav {
+        width: 70%;
+    }
+}

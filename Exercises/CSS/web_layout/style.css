@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+header{
+    background-color: yellowgreen;
+}
+
+header::after {
+    content: "Menu";
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    margin-right: 3rem;
+}
+
+.header-navigation {
+    display: none;
+}
+
+.section-banner {
+    background-color: dodgerblue;
+}
+
+.section-info {
+    background-color: lightcoral;
+}
+
+.section-portfolio {
+    background-color: chartreuse;
+}
+
+.section-contact {
+    background-color: goldenrod;
+}
+
+footer {
+    background-color: lightseagreen;
+}
+
+.container {
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.portfolio-list {
+    list-style: none;
+}
+
+.portfolio-item {
+    background-color: lightyellow;
+    border: 1px solid black;
+}
+
+@media screen and (min-width: 576px) {
+    header {
+        display: flex;
+    }
+
+    header::after {
+        content: none;
+    }
+
+    .header-logo {
+        flex-grow: 2;
+    }
+    
+    .header-navigation {
+        display: inline-block;
+        flex-grow: 3;
+    }
+    
+    .menu-list {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu-item {
+        border: 1px solid black;
+        background-color: deepskyblue;
+        margin: 0 1rem;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio-list{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .portfolio-item {
+        width: calc(100% / 3);
+    }
+
+    main { 
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-banner, section-info {
+        width: 50%;
+    }
+
+    .section-portfolio, section-contact {
+       width: 100%;
+    }
+    /* .section-banner {
+        grid-area: banner;
+    }
+    
+    .section-info {
+        grid-area: info;
+    }
+
+    .section-portfolio {
+        grid-area: portfolio;
+    }
+
+    .section-contact {
+        grid-area: contact;
+    }
+
+    main {
+        display: grid;
+        grid-template-areas: 
+        "banner info"
+        "portfolio portfolio"
+        "contact contact";
+    }
+
+    .portfolio-list{
+        grid-template-columns: auto auto auto;
+    } */
+}

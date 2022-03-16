@@ -1,2 +1,2 @@
 # JS_Moralis_Course
- New 2021 JS course using moralis from Moralis Acadcemy (old Ivan On Tech Academy) )
+ New 2021 JS course using moralis from Moralis Acadcemy
